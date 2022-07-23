@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             x:Class="App3.MainPage">
+    <Grid>
+        <StackLayout BackgroundColor="#2FFFFF">
+            <Path Stroke="#007fbc" Aspect="Fill" StrokeThickness="5" HeightRequest="30"
+                  Data="M0,0S54.587-33.916,148.078-33.916,293.962,0,293.962,0"/>
+            
+            <BoxView BackgroundColor="Green" Opacity="0.8" HeightRequest="200"  Margin="10"/>
+
+
+
+
+
+        </StackLayout>
+    </Grid>
+</ContentPage>

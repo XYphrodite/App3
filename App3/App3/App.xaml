@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.App">
+    <Application.Resources>
+        <x:Double x:Key="ScaldceBorderWidth">2</x:Double>
+        <Color x:Key="words">#ede7e3</Color>
+        <Color x:Key="back">#82c0cc</Color> 
+        <Style x:Key="v_prc_Style" TargetType="Label">
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="FontFamily" Value="Verdana"/>
+            <Setter Property="TextColor" Value="{StaticResource words}"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="VerticalOptions" Value="Start"/>
+        </Style>
+        <Style x:Key="lvl_Style" TargetType="Label">
+            <Setter Property="TextColor" Value="Gray"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+        </Style>
+        <Style x:Key="scaleDigit" TargetType="Label">
+            <Setter Property="HorizontalOptions" Value="End"/>
+            <Setter Property="VerticalOptions" Value="Start"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="Padding" Value="-2"/>
+        </Style>
+    </Application.Resources>
+</Application>
