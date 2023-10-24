@@ -76,146 +76,7 @@ namespace App3.View
             PrintDigits(h * scaleH, w * scaleW, e0, Lvl0, Value0, Percent0);
             
         }
-        protected void OnPaintSurface1(object sender, SKPaintSurfaceEventArgs e1)
-        {
-            double percentValue = 0;
-            GraphicScale gs = new GraphicScale();
-            gs.FillDataPercent(Percent1);
-            gs.FillDataValue(Value1);
-            percentValue = gs.getPercent();
 
-            string black = "#000000",
-                scaleColor = "#ffa62b";
-            double scaleH = 2.75;
-            double scaleW = 2.75;
-            var surface = e1.Surface;
-            var canvas = e1.Surface.Canvas;
-            var info = e1.Info;
-            SkiaSharp.SKPaint paintBlack = new SkiaSharp.SKPaint();
-            paintBlack.Color = SkiaSharp.SKColor.Parse(black);
-            SkiaSharp.SKPaint paintScale = new SkiaSharp.SKPaint();
-            paintScale.Color = SkiaSharp.SKColor.Parse(scaleColor);
-
-            double h = Scale1.Height;
-            double w = Scale1.Width;
-            canvas.DrawRect((float)(w * scaleW / 6), (float)((h * scaleH) - (h * scaleH * percentValue)), (float)(w * scaleW), (float)(h * scaleH * percentValue), paintScale);
-            double height = Application.Current.MainPage.Height;
-            double width = Application.Current.MainPage.Width;
-            DrawAllLines(e1, h, w, scaleH, scaleW, paintBlack);
-            PrintDigits(h * scaleH, w * scaleW, e1, Lvl1, Value1, Percent1);
-        }
-        protected void OnPaintSurface2(object sender, SKPaintSurfaceEventArgs e2)
-        {
-            double percentValue = 0;
-            GraphicScale gs = new GraphicScale();
-            gs.FillDataPercent(Percent2);
-            gs.FillDataValue(Value2);
-            percentValue = gs.getPercent();
-
-            string black = "#000000",
-                scaleColor = "#ffa62b";
-            double scaleH = 2.75;
-            double scaleW = 2.75;
-            var surface = e2.Surface;
-            var canvas = e2.Surface.Canvas;
-            var info = e2.Info;
-            SkiaSharp.SKPaint paintBlack = new SkiaSharp.SKPaint();
-            paintBlack.Color = SkiaSharp.SKColor.Parse(black);
-            SkiaSharp.SKPaint paintScale = new SkiaSharp.SKPaint();
-            paintScale.Color = SkiaSharp.SKColor.Parse(scaleColor);
-
-            double h = Scale2.Height;
-            double w = Scale2.Width;
-            canvas.DrawRect((float)(w * scaleW / 6), (float)((h * scaleH) - (h * scaleH * percentValue)), (float)(w * scaleW), (float)(h * scaleH * percentValue), paintScale);
-            double height = Application.Current.MainPage.Height;
-            double width = Application.Current.MainPage.Width;
-            DrawAllLines(e2, h, w, scaleH, scaleW, paintBlack);
-            PrintDigits(h * scaleH, w * scaleW, e2, Lvl2, Value2, Percent2);
-        }
-        protected void OnPaintSurface3(object sender, SKPaintSurfaceEventArgs e3)
-        {
-            double percentValue = 0;
-            GraphicScale gs = new GraphicScale();
-            gs.FillDataPercent(Percent3);
-            gs.FillDataValue(Value3);
-            percentValue = gs.getPercent();
-
-            string black = "#000000",
-                scaleColor = "#ffa62b";
-            double scaleH = 2.75;
-            double scaleW = 2.75;
-            var surface = e3.Surface;
-            var canvas = e3.Surface.Canvas;
-            var info = e3.Info;
-            SkiaSharp.SKPaint paintBlack = new SkiaSharp.SKPaint();
-            paintBlack.Color = SkiaSharp.SKColor.Parse(black);
-            SkiaSharp.SKPaint paintScale = new SkiaSharp.SKPaint();
-            paintScale.Color = SkiaSharp.SKColor.Parse(scaleColor);
-
-            double h = Scale3.Height;
-            double w = Scale3.Width;
-            canvas.DrawRect((float)(w * scaleW / 6), (float)((h * scaleH) - (h * scaleH * percentValue)), (float)(w * scaleW), (float)(h * scaleH * percentValue), paintScale);
-            double height = Application.Current.MainPage.Height;
-            double width = Application.Current.MainPage.Width;
-            DrawAllLines(e3, h, w, scaleH, scaleW, paintBlack);
-            PrintDigits(h * scaleH, w * scaleW, e3, Lvl3, Value3, Percent3);
-        }
-        protected void OnPaintSurface4(object sender, SKPaintSurfaceEventArgs e4)
-        {
-            double percentValue = 0;
-            GraphicScale gs = new GraphicScale();
-            gs.FillDataPercent(Percent4);
-            gs.FillDataValue(Value4);
-            percentValue = gs.getPercent();
-
-            string black = "#000000",
-                scaleColor = "#ffa62b";
-            double scaleH = 2.75;
-            double scaleW = 2.75;
-            var surface = e4.Surface;
-            var canvas = e4.Surface.Canvas;
-            var info = e4.Info;
-            SkiaSharp.SKPaint paintBlack = new SkiaSharp.SKPaint();
-            paintBlack.Color = SkiaSharp.SKColor.Parse(black);
-            SkiaSharp.SKPaint paintScale = new SkiaSharp.SKPaint();
-            paintScale.Color = SkiaSharp.SKColor.Parse(scaleColor);
-
-            double h = Scale4.Height;
-            double w = Scale4.Width;
-            canvas.DrawRect((float)(w * scaleW / 6), (float)((h * scaleH) - (h * scaleH * percentValue)), (float)(w * scaleW), (float)(h * scaleH * percentValue), paintScale);
-            double height = Application.Current.MainPage.Height;
-            double width = Application.Current.MainPage.Width;
-            DrawAllLines(e4, h, w, scaleH, scaleW, paintBlack);
-            PrintDigits(h * scaleH, w * scaleW, e4, Lvl4, Value4, Percent4);
-        }
-        protected void OnPaintSurface5(object sender, SKPaintSurfaceEventArgs e5)
-        {
-            double percentValue = 0;
-            GraphicScale gs = new GraphicScale();
-            gs.FillDataPercent(Percent5);
-            gs.FillDataValue(Value5);
-            percentValue = gs.getPercent();
-
-            string black = "#000000",
-                scaleColor = "#ffa62b";
-            double scaleH = 2.75;
-            double scaleW = 2.75;
-            var surface = e5.Surface;
-            var canvas = e5.Surface.Canvas;
-            var info = e5.Info;
-            SkiaSharp.SKPaint paintBlack = new SkiaSharp.SKPaint();
-            paintBlack.Color = SkiaSharp.SKColor.Parse(black);
-            SkiaSharp.SKPaint paintScale = new SkiaSharp.SKPaint();
-            paintScale.Color = SkiaSharp.SKColor.Parse(scaleColor);
-            
-            double h = Scale5.Height;
-            double w = Scale5.Width;
-            canvas.DrawRect((float)(w *scaleW/6), (float)((h * scaleH) - (h * scaleH * percentValue)), (float)(w * scaleW), (float)(h * scaleH * percentValue), paintScale);
-            double height = Application.Current.MainPage.Height;
-            double width = Application.Current.MainPage.Width;
-            DrawAllLines(e5, h, w, scaleH, scaleW, paintBlack);
-            PrintDigits(h*scaleH,w*scaleW,e5,Lvl5,Value5,Percent5);
-        }
         private void DrawAllLines(SKPaintSurfaceEventArgs e, double h,double w, double scaleH, double scaleW, SkiaSharp.SKPaint paint)
         {
             var canvas = e.Surface.Canvas;
@@ -245,7 +106,7 @@ namespace App3.View
             {
                 if (h > w)
                 {
-                    font = new SkiaSharp.SKFont(SkiaSharp.SKTypeface.Default, (float)(w / 5), 1, 0);
+                    font = new SkiaSharp.SKFont(SkiaSharp.SKTypeface.Default, (float)(w / 8), 1, 0);
                     for (double i = h * scaleH / 40, n = 100; i <= h * scaleH; i += h * scaleH / 10.27, n -= 10)
                     {
                         canvas.DrawText(n.ToString(), (float)(w / 10), (float)i, font, paint);
@@ -290,9 +151,9 @@ namespace App3.View
             {
                  if (h > w)
                 {
-                    v.FontSize = w / 10;
-                    lvl.FontSize = w / 10;
-                    prc.FontSize = w / 10;
+                    v.FontSize = w / 20;
+                    lvl.FontSize = w / 20;
+                    prc.FontSize = w / 20;
 
                 }
                 else

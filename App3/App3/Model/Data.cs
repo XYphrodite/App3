@@ -6,7 +6,7 @@ namespace App3
     {
         private double _maxValue = 300000;
         private double _minValue = 0;
-        private double a = 123456;
+        private double a = 200000;
 
         public double getData()
         {
