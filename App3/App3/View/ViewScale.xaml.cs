@@ -55,7 +55,7 @@ namespace App3.View
             percentValue = gs.getPercent();
 
             string black = "#000000",
-                scaleColor = "#ffa62b";
+                scaleColor = "#389583";
             double scaleH = 2.75;
             double scaleW = 2.75;
             var surface = e0.Surface;
@@ -68,7 +68,11 @@ namespace App3.View
 
             double h = Scale0.Height;
             double w = Scale0.Width;
-            canvas.DrawRect((float)(w * scaleW / 6), (float)((h * scaleH) - (h * scaleH * percentValue)), (float)(w * scaleW), (float)(h * scaleH * percentValue), paintScale);
+            canvas.DrawRect((float)(w * scaleW / 6),
+                (float)((h * scaleH) - (h * scaleH * percentValue)),
+                (float)(w * scaleW - 162),
+                (float)(h * scaleH * percentValue),
+                paintScale);
             //canvas.DrawText
             double height = Application.Current.MainPage.Height;
             double width = Application.Current.MainPage.Width;
@@ -81,8 +85,10 @@ namespace App3.View
         {
             var canvas = e.Surface.Canvas;
             //обводка
-            canvas.DrawLine((float)(w *scaleW/6), 0, (float)(w * scaleW / 6), (float)(h * scaleH), paint);
-            canvas.DrawLine((float)(w * scaleW / 6)+1, 0, (float)(w * scaleW / 6)+1, (float)(h * scaleH), paint);
+            canvas.DrawLine((float)(w *scaleW/6), 0,
+                (float)(w * scaleW / 6), (float)(h * scaleH), paint);
+            canvas.DrawLine((float)(w * scaleW / 6)+1, 0,
+                (float)(w * scaleW / 6)+1, (float)(h * scaleH), paint);
             canvas.DrawLine((float)(w * scaleW / 6)+2, 0, (float)(w * scaleW / 6)+2, (float)(h * scaleH), paint);
             canvas.DrawLine((float)(w * scaleW / 6), 0, (float)(w * scaleW), 0, paint);
             canvas.DrawLine((float)(w * scaleW / 6), 1, (float)(w * scaleW), 1, paint);

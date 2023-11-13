@@ -4,9 +4,9 @@ namespace App3
 {
     internal class Data
     {
-        private double _maxValue = 300000;
+        private double _maxValue = 30000;
         private double _minValue = 0;
-        private double a = 200000;
+        private double a = 25000;
 
         public double getData()
         {

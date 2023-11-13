@@ -4,8 +4,8 @@
              x:Class="App3.App">
     <Application.Resources>
         <x:Double x:Key="ScaldceBorderWidth">2</x:Double>
-        <Color x:Key="words">#ede7e3</Color>
-        <Color x:Key="back">#82c0cc</Color> 
+        <Color x:Key="words">#05396B</Color>
+        <Color x:Key="back">#5ADC94</Color> 
         <Style x:Key="v_prc_Style" TargetType="Label">
             <Setter Property="FontAttributes" Value="Bold"/>
             <Setter Property="FontFamily" Value="Verdana"/>
@@ -14,7 +14,7 @@
             <Setter Property="VerticalOptions" Value="Start"/>
         </Style>
         <Style x:Key="lvl_Style" TargetType="Label">
-            <Setter Property="TextColor" Value="Gray"/>
+            <Setter Property="TextColor" Value="#05396B"/>
             <Setter Property="HorizontalOptions" Value="Center"/>
             <Setter Property="VerticalOptions" Value="Center"/>
         </Style>
